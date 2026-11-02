@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO-MARKET | Premium Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">GO-<span>MARKET</span></div>
+        <button class="btn-cart">Savat: <span class="cart-count">0</span></button>
+    </header>
+
+    <section class="hero-market">
+        <h2>Barcha xaridlar uydan turib <br><span class="gold-text">Onlayn va Tezkor</span></h2>
+        <div class="search-box">
+            <input type="text" placeholder="Mahsulot yoki do'kon qidiring...">
+            <button class="btn-search">Qidirish</button>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <h3 class="section-title">Savdo <span class="gold-text">Yo'nalishlari</span></h3>
+        <div class="category-grid">
+            <div class="category-card" onclick="selectCategory('kafe')"><span>🍔 Kafe & Restoran</span></div>
+            <div class="category-card" onclick="selectCategory('oziq_ovqat')"><span>🍏 Oziq-ovqat</span></div>
+            <div class="category-card" onclick="selectCategory('texnika')"><span>💻 Maishiy Texnika</span></div>
+            <div class="category-card" onclick="selectCategory('kiyim')"><span>👕 Kiyim-kechak</span></div>
+            <div class="category-card" onclick="selectCategory('avto')"><span>🚗 Avto Olami</span></div>
+        </div>
+    </section>
+
+    <section class="featured-shops">
+        <h3 class="section-title">Ommabop <span class="gold-text">Do'konlar</span></h3>
+        <div class="shop-grid" id="shopGrid">
+            <!-- Do'konlar shu yerga chiqadi -->
+        </div>
+    </section>
+    <!-- Do'kon mahsulotlari modal oynasi -->
+    <div id="productModal" class="modal-products">
+        <div class="modal-products-content">
+            <span class="close-products" onclick="closeShopMenu()">&times;</span>
+            <h3 id="modalShopName" class="gold-text">Do'kon nomi</h3>
+            <div id="productsList">
+                <!-- Mahsulotlar ro'yxati shu yerga chiqadi -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

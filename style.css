@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.gold-text, .logo span {
+    color: #d4af37;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-cart {
+    background: #1a1a1a;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-market {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.hero-market h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    display: flex;
+    background: #161616;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    flex: 1;
+}
+
+.btn-search {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categories-section, .featured-shops {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.category-card {
+    background: #121212;
+    border: 1px solid #222;
+    padding: 12px 20px;
+    border-radius: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    border-color: #d4af37;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.shop-card {
+    background: #121212;
+    border: 1px solid #222;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.shop-card:hover {
+    border-color: #d4af37;
+}
+
+.shop-img {
+    height: 100px;
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-info {
+    padding: 10px;
+}
+
+.shop-info h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.shop-info p {
+    font-size: 11px;
+    color: #aaa;
+}
+/* Mahsulotlar oynasi dizayni */
+.modal-products {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-products-content {
+    background-color: #121212;
+    border: 1px solid #d4af37;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+}
+
+.close-products {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-products:hover {
+    color: #d4af37;
+}
+
+/* Mahsulot qatorlari */
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 12px;
+    border: 1px solid #222;
+}
+
+.product-info h5 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.product-info p {
+    font-size: 13px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.btn-add-cart {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-add-cart:hover {
+    background: #b5922e;
+}
+
+/* Rasmlar o'rniga vaqtinchalik premium gradient fon */
+.shop-img {
+    height: 110px;
+    background: linear-gradient(135deg, #1f1c18 0%, #8e7544 100%) !important;
+}
